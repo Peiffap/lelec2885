@@ -6,7 +6,7 @@ Convolution Neural Networks are similar to ordinary Neural networks, but they ta
 
 Actually, there are three main layers in CNN: Convolution layer, Pooling layer (Max pooling) and Fully connected Layer. The convolution layer is the main layer in CNN, including the parameter ’filter’ which is actually the smaller number, but with the same number of depth with input image. Inside the convolution layer, the filter scan over or convolve every pixel and computing the dot product. Pooling layer would be our second layer and it is used to conduct downsampling operations inside which reducing the size of the image, that can be more easy to control the ’overfitting’ issue. The most common one is max pooling, it use the 2*2 filter with stride=2 to keep the maximum value of the image. The final layer goes to Fully connected layer that computing the class scores, and reduce the full image to the single vector of class scores.
 
-To implement practically our CNN, we are going to resort to Keras library. Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano[1].
+To implement practically our CNN, we are going to resort to **Keras** library. Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano[1]. The dataset used to train the net is **MNIST database of handwritten digits**.
 
 ## Model Implementation
 
@@ -24,14 +24,14 @@ The second argument is Loss Function, it is used to estimate the difference betw
 
 The **accuracy** obtained was **0.9922**
 
-Finally a script ([test handwritten.py](code/test_handwritten.py)) was developed in order to try our trained model with handwritten numbers. 
+Finally a script ([test handwritten.py](code/test_handwritten.py)) was developed in order to try our trained model with handwritten numbers. The model can predicted almost all the numbers properly (see Figure 1a and 1c), but there had been some errors (Figure 1b) which are studied in the followirng section.
 
 ## Study CNN behavior: one vs two
 
 In this part we are going to study thoroughly the decisions made by the CNN trained. For doing this research we are going to focus on the numbers one and two, because we could appreciate some interested results. The code is implement in [visualization.py](code/visualization.py)
 
 First of all we draw both numbers similar to the MINISTs ones so that the CNN predicts perfectly each number (Figure 1a and 1d ) .
-After that we study the behavior of the CNN during the predictions. For doing that we used Keras-vis [4], a Neural Network visualization toolkit for Keras, in order to represent the Attention Maps.
+After that we study the behavior of the CNN during the predictions. For doing that we used **Keras-vis** [4], a Neural Network visualization toolkit for Keras, in order to represent the **Attention Maps**.
 
 This technique uses the gradients, between the output and input, to highlight input regions that cause the most change in the output. In order words the most important parts of the image for the predictions will be the ones with higher values of gradient. Hence we have performed a test removing parts of the number one to visualize how the predictions changed. The results of the predictions made by the model are shown in figures Figure 2a to Figure 2e.
 
