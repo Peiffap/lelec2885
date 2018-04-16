@@ -1,4 +1,4 @@
-# lelec2885
+# Computer Vision project
 
 In this project the team has studied theoretically and practically a type of **Neural Networks** especially used for images applications: **Convolutional Neural Networks**.
 
