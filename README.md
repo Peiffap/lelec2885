@@ -1,6 +1,6 @@
 # Computer Vision project
 
-In this project the team has studied theoretically and practically a type of **Neural Networks** especially used for images applications: **Convolutional Neural Networks**.
+This is a part of a project done for a subject (Image Processing and Computer Vision) of Université Catholique de Louvain-la-neuve. In this project the team has studied theoretically and practically a type of **Neural Networks** especially used for images applications: **Convolutional Neural Networks**.
 
 Convolution Neural Networks are similar to ordinary Neural networks, but they take advantages that the input layer consists on images and its can be the full image with the larger size compared with regular networks. In fact, the image of the regular network can only of size 32*32*3 which corresponds to width, height and color channel. If we take the image with larger size, overfitting would happened, because it would contain more parameters than can be justified by the data, leading to poor performance.
 
