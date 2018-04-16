@@ -1,1 +1,8 @@
 # lelec2885
+
+In this project the team has studied theoretically and practically a type of Neural Networks specially used for images applications: Convolutional Neural Networks.
+
+Convolution Neural Networks are similar to ordinary Neural networks, but they take advantages that the input layer consists on images and its can be the full image with the larger size compared with regular networks. In fact, the image of the regular network can only of size 32*32*3 which corresponds to width, height and color channel. If we take the image with larger size, overfitting would happened, because it would contain more parameters than can be justified by the data, leading to poor performance.
+
+Actually, there are three main layers in CNN: Convolution layer, Pooling layer (Max pooling) and Fully connected Layer. The convolution layer is the main layer in CNN, including the parameter ’filter’ which is actually the smaller number, but with the same number of depth with input image. Inside the convolution layer, the filter scan over or convolve every pixel and computing the dot product. Pooling layer would be our second layer and it is used to conduct downsampling operations inside which reducing the size of the image, that can be more easy to control the ’overfitting’ issue. The most common one is max pooling, it use the 2*2 filter with stride=2 to keep the maximum value of the image. The final layer goes to Fully connected layer that computing the class scores, and reduce the full image to the single vector of class scores.
+To implement practically our CNN, we are going to resort to Keras library. Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano[1].
