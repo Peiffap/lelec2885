@@ -37,6 +37,10 @@ This technique uses the gradients, between the output and input, to highlight in
 
 With this approach we could noticed that the most important part for the CNN to distinguish between one and two is principally the upper part of the number. The main reason is that the ones from MINISTs dataset used to train the model did not have this upper part. With a big ’head’ it is only enough the left extreme to predict a number two (Figure 2a), but while we are reducing this part, it is needed to check the whole part(see Figure 2b, Figure 2c and Figure 2d). Finally, until the CNN does not interpret this part as a continuous prolongation of the body (Figure 2e), it does not predict the number properly.
 
+
+## Images
+![alt text](figures/numbers.png )
+
 ## References
 
 [1] Keras documentation:
@@ -57,5 +61,5 @@ With this approach we could noticed that the most important part for the CNN to 
 
 [7] Transfer learning & The art of using Pre-trained Models in Deep Learning
    https://www.analyticsvidhya.com/blog/2017/06/transfer-learning
-   
+
 [8] Li, Zhizhong; Hoiem, Derek; ”Learning without Forgetting”, European Conference on Computer Vision (pp. 614-629), 2016
