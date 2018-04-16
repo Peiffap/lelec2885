@@ -41,14 +41,21 @@ With this approach we could noticed that the most important part for the CNN to 
 
 [1] Keras documentation:
    https://keras.io/
+
 [2] Keras Tutorial: The Ultimate Beginner ́s Guide to Deep Learning in Python
    https://elitedatascience.com/keras-tutorial-deep-learning-in-python
+
 [3] Udemy platform: Data Science, Deep Learning, & Machine Learning with Python
    https://www.udemy.com/data-science-and-machine-learning
+
 [4] Neural network visualization toolkit for keras
    https://github.com/raghakot/keras-vis
+
 [5] A. Krizhevsky, I. Sutskever, and G. E. Hinton. ImageNet Classification with Deep Convolutional Neural Networks
+
 [6] Maxime Oquab, Leon Bottou, Ivan Laptev, Josef Sivic1. Learning and Transferring Mid-Level Image Representations using Convolutional Neural Networks
+
 [7] Transfer learning & The art of using Pre-trained Models in Deep Learning
    https://www.analyticsvidhya.com/blog/2017/06/transfer-learning
+   
 [8] Li, Zhizhong; Hoiem, Derek; ”Learning without Forgetting”, European Conference on Computer Vision (pp. 614-629), 2016
